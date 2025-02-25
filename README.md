@@ -21,7 +21,7 @@ This repository contains codes for data generation about our paper in the Patter
 * Run `generate_random_partition.m`: For each subject with $N$ sequences ($N=10$ or $20$), randomly selected $N/2$ sequences will be used for training and the remaining will be used for testing.
 * Run `generate_second_partition.m`: The train and test subsets will be partitioned based on Collecting Phase I/II for Protocol II evaluation. Please refer to the original paper for more details.  
 
-**Step 5**: Run `mat2pngSpec.m` or `mat2pngCVD.m` to generate spectrogram/CVD patches with size of $115\times115$. You may need to mannually load sequences you get from **Step 3** by modifying Line 6.
+**Step 5**: Run `mat2pngSpec.m` or `mat2pngCVD.m` to generate spectrogram/CVD patches with size of $115\times115$. You may need to mannually load sequences you get from **Step 4** by modifying Line 6.
 
 ### Download the full dataset from online disks
 
