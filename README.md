@@ -12,7 +12,7 @@ This repository contains codes for data generation about our paper in the Patter
 
 **Step 1**: Create file directories `./dataset` and `./DataMatrix`. 
 
-**Step 2**: Download the raw signal files (~14GB) from [123 Cloud Drive](https://www.123865.com/s/95cVTd-bfLcv) and save data to `./dataset`. 
+**Step 2**: Download the raw signal files (~14GB) from [123 Cloud Drive](https://www.123865.com/s/95cVTd-bfLcv) and save data to `./dataset`. File path should be `./dataset/dataset/001/...`
 
 **Step 3**: Run `generate_spectrogram_for_all.m` to convert raw gait signals into spectrograms in `.mat` format. 
 
