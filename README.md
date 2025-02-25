@@ -25,7 +25,7 @@ This repository contains codes for data generation about our paper in the Patter
 
 ### Download the full dataset from online disks
 
-Alternatively, we upload the image files of generated spectrograms/CVDs to [Google Drive](). You may use the image dataset with customized train/test partitions.
+Alternatively, we upload the image files of generated spectrograms/CVDs to [Google Drive](https://drive.google.com/drive/folders/15ymhX6rjhHcUlJul6Ecb78pjxTrMQ13K?usp=sharing). You may use the image dataset with customized train/test partitions.
 
 ## Citation
 We thank you for showing interest in our work. 
