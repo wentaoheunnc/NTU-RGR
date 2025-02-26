@@ -17,8 +17,8 @@ This repository contains codes for data generation about our paper in the Patter
 **Step 3**: Run `generate_spectrogram_for_all.m` to convert raw gait signals into spectrograms in `.mat` format. 
 
 **Step 4**: Generate a data partition sequence to split train and test subsets with different settings. 
-* Run `generate_half_partition.m`: For each subject with $N$ sequences ($N=10$ or $20$), sequences $[1:N/2]$ will be used for training and sequences $[N/2:N]$ will be used for testing.
-* Run `generate_random_partition.m`: For each subject with $N$ sequences ($N=10$ or $20$), randomly selected $N/2$ sequences will be used for training and the remaining will be used for testing.
+* Run `generate_half_partition.m`: For each subject with $N$ sequences ($N=10$ or $20$), sequences $[1:\frac{N}{2}]$ will be used for training and sequences $[\frac{N}{2}:N]$ will be used for testing.
+* Run `generate_random_partition.m`: For each subject with $N$ sequences ($N=10$ or $20$), randomly selected $\frac{N}{2}$ sequences will be used for training and the remaining will be used for testing.
 * Run `generate_second_partition.m`: The train and test subsets will be partitioned based on Collecting Phase I/II for Protocol II evaluation. Please refer to the original paper for more details.  
 
 **Step 5**: Run `mat2pngSpec.m` or `mat2pngCVD.m` to generate spectrogram/CVD patches with size of $115\times115$. You may need to mannually load sequences you get from **Step 4** by modifying Line 6.
