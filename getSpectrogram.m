@@ -14,7 +14,7 @@ tt = abs(dataBlockSTFT);
 %S = 20*log10(tt);
 % S = 20*log10(tt+median(tt(:))); % processed one
 S = 20*log10(tt); % original one
-% S(S<median(S(:))) = median(S(:));
+S(S<median(S(:))) = median(S(:));
 % S = medfilt2(S);
 
 %% normalization
@@ -27,4 +27,5 @@ for i = 1:size(S,2)
 end
 % S(:,end-50:end) = [];
 % S(:,1:50) = [];
+
 S = (S-min(S(:)))/(max(S(:))-min(S(:)))*255;
