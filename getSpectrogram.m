@@ -12,9 +12,9 @@ dataBlock = dataBlock .* repmat(hamming(NFFT), 1, length(startIdcs)); % windowin
 dataBlockSTFT = fftshift(fft(dataBlock),1);
 tt = abs(dataBlockSTFT);
 %S = 20*log10(tt);
-% S = 20*log10(tt+median(tt(:))); % processed one
-S = 20*log10(tt); % original one
-S(S<median(S(:))) = median(S(:));
+S = 20*log10(tt+median(tt(:))); % processed one
+% S = 20*log10(tt); % original one
+% S(S<median(S(:))) = median(S(:));
 % S = medfilt2(S);
 
 %% normalization
@@ -29,3 +29,4 @@ end
 % S(:,1:50) = [];
 
 S = (S-min(S(:)))/(max(S(:))-min(S(:)))*255;
+
